@@ -8,6 +8,10 @@
 </head>
 <body>
     <header>
+        
+        <div id="welcomeBox">
+          <h2 id="welcome"></h2>
+        </div>
         <h1 class="heading">My Portfolio</h1>
         <nav>
             <ul>
@@ -18,12 +22,12 @@
             </ul>
         </nav>
     </header>
-
     <section id="about">
         <h2 class="heading">About Me</h2>
         <p class="paragraph">Hello! I'm Kajal Singh, a passionate software developer with experience in web development and design. I love creating beautiful and functional websites.</p>
         <img src= "C:\Users\kajal\OneDrive\c++ basics\WhatsApp Image 2025-05-03 at 11.30.34_3034553c.jpg"alt="Kajal Singh" class="profile-img">
     </section>
+    <p id="projectCount"></p>
     <section id="projects">
         <h2 class="heading">Projects</h2>
         <div class="project">
@@ -103,19 +107,29 @@
             </ul>
         </div>
     </section>
-
     <section id="contact">
-        <h2 class="heading">Contact</h2>
-        <p class="paragraph">Email: <a href="mailto:kajalsingh16408@gmail.com">kajalsingh16408@gmail.com</a></p>
-        <div class="social-media">
-            <a href="https://linkedin.com/in/kajalsingh16408" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Kajalsingh16408" target="_blank">GitHub</a>
-            <a href="https://twitter.com/kajalsingh16408" target="_blank">Twitter</a>
-        </div>
+     <form id="contactForm">
+        <h1>Contact Me</h1>
+         <input type="text" id="name" placeholder="Enter Name">
+         <br><br>
+         
+         <input type="text" id="email" placeholder="Enter Email Id">
+         <br><br>
+         
+         <textarea id="message" placeholder="Write Your Message"></textarea>
+         <br><br>
+         
+         <button type="submit">Send</button>
+         
+         <p id="error"></p>
+     </form>
     </section>
     <footer>
         <p class="paragraph">&copy; 2025 Kajal Singh. All rights reserved.</p>
     </footer>
+    <button id="topBtn">⬆ Top</button>
+    <script src="portfolio.js"></script>
 </body>
 </html>
+
 
